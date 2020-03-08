@@ -9,7 +9,7 @@ running on [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_S
 First, upgrade system packages.
 
 ```
-sudo apt-get update -y && sudo apt-get upgrade && apt-get install ssh python3-pip -y
+sudo apt-get update -y && sudo apt-get upgrade -y && apt-get install ssh python3-pip -y
 ```
 
 For convenience, let's remove the need for a `sudo` password.

@@ -2,3 +2,18 @@
   apt:
     name: curl
     state: latest
+
+- name: Install Git
+  apt:
+    name: git
+    state: latest
+
+- name: Install ping
+  apt:
+    name: iputils-ping
+    state: latest
+
+- name: Install bash completion
+  apt:
+    name: bash-completion
+    state: latest

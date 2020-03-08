@@ -9,8 +9,7 @@ running on [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_S
 First, upgrade system packages.
 
 ```
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade && apt-get install ssh python3-pip -y
 ```
 
 For convenience, let's remove the need for a `sudo` password.
@@ -21,10 +20,9 @@ sudo visudo
 
 Then add `username ALL=(ALL) NOPASSWD: ALL` to the bottom of the file. Now you can `sudo` without a password!
 
-Next, install and upgrade pip (Python package manager)
+Upgrade pip (Python package manager)
 
 ```
-sudo apt-get install python3-pip -y
 sudo pip3 install --upgrade pip
 ```
 
@@ -34,10 +32,9 @@ Now, install Ansible using pip
 sudo pip install ansible
 ```
 
-Next, install SSH and generate your SSH keys
+Next, generate your SSH keys
 
 ```
-sudo apt-get install ssh -y
 ssh-keygen -t rsa -b 4096 -C "francommit@host"
 ```
 

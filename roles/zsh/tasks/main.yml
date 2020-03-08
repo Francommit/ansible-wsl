@@ -5,8 +5,9 @@
     sudo: yes
 
 - name: Set zsh as default shell
-  user: name=francommit shell=/usr/bin/zsh
-  sudo: yes
+  user: 
+    name: francommit shell=/usr/bin/zsh
+    sudo: yes
 
 - name: Check if Oh My Zsh is already installed
   stat: path=~/.oh-my-zsh

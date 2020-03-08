@@ -5,7 +5,8 @@
 
 - name: Set zsh as default shell
   user: 
-    name: francommit shell=/usr/bin/zsh
+    name: francommit 
+    shell: /usr/bin/zsh
 
 - name: Check if Oh My Zsh is already installed
   stat: path=~/.oh-my-zsh

@@ -21,3 +21,5 @@
   template:
     src: zshrc.j2
     dest: "{{ item.home }}/.zshrc"
+  with_items: "{{ ohmyzsh_users }}"
+  tags: ohmyzsh_config

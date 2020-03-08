@@ -9,5 +9,5 @@ running on [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_S
 Grab a coffee, and hopefully return to a setup terminal
 
 ```
-sudo apt-get update -y && sudo apt-get upgrade -y && apt-get install ssh git python3-pip -y && sudo pip3 install --upgrade pip && pip install ansible && git clone https://github.com/Francommit/ansible-wsl.git && cd ansible-wsl && ansible-playbook -i hosts setup.yml
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install ssh git python3-pip -y && sudo pip3 install --upgrade pip && pip install ansible && git clone https://github.com/Francommit/ansible-wsl.git && cd ansible-wsl && ansible-playbook -i hosts setup.yml
 ```

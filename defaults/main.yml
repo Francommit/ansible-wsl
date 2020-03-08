@@ -1,0 +1,9 @@
+ohmyzsh_users:
+  - username: francommit
+    usergroup: admin
+    home: /home/ops
+  - username: root
+    usergroup: root
+    home: /root
+
+ohmyzsh_plugins: git colored-man-page colorize extract history npm symfony2 httpie zsh-syntax-highlighting zsh-autosuggestions
